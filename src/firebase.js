@@ -47,12 +47,14 @@ const createDB = async () =>{
   for (let index = 1; index <= 9; index++) {
 
   await setDoc(doc(db, "hostels", "B15", "room", "00" + index), {
+    Empty:true,
     Full : false,
     p1 : "EMPTY",
     p2 : "EMPTY"
   });
 
   await setDoc(doc(db, "hostels", "B18", "room", "00" + index), {
+    Empty:true,
     Full : false,
     p1 : "EMPTY",
     p2 : "EMPTY"

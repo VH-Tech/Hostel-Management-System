@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import "./Dashboard.css";
 import Navbar from"./Navbar"
 import Bookform from "./Book";
+import Swapform from "./Swap";
 import { app ,auth, db, logout} from "./firebase";
 import {getFirestore, query, getDocs, collection, where, addDoc, doc, setDoc} from "firebase/firestore";
 
@@ -19,6 +20,7 @@ function Dashboard() {
     <div>
     <Navbar />
     <Bookform />
+    <Swapform />
     </div>
   );
 }
